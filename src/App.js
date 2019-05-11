@@ -23,4 +23,21 @@ function App() {
   );
 }
 
+// Particles.js - This may not be utilized, but 
+// I am working on it to see if I can get it running //
+
+// import Particles from 'react-particles-js';
+ 
+// class App extends Component{
+  
+//     render(){
+//         return (
+//             <Particles />
+//         );
+//     };
+ 
+// }
+
+
+
 export default App;
