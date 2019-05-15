@@ -1,130 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="particles.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="../public/assets/css/index.css" />
     <link rel="stylesheet" href="app.js" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <title>VetSx</title>
-<style>
-    body {
-
-    }
-    .card-body {
-        background-color: rgb(193, 202, 204);
-        height: 600px;
-        /* margin-top: 10px;     */
-    }
-    .col-md-5 {
-        background-color: rgb(223, 222, 236);
-        height: 600px;
-        /* margin-top: 10px;     */
-    }
-    .card {
-        margin: 0 auto; 
-        float: none; 
-        margin-top: 4em; 
-        border: 0.5px solid;
-        /* box-shadow: 5px 5px 5px 5px #0e275c; */
-        /* box-shadow: 0px 0px 3px 3px #0e275c; */
-    }
-    form {
-        margin-right: 6em;
-        margin-left: 6em;
-        margin-top: 10em;
-        text-align: center;
-    }
-    .form-group input[type=username]{
-        padding-left: 30px;
-    }
-    .form-group {
-        position:relative;
-    }
-    .form-group i{
-        position: absolute;
-        left:0;
-        top:22px;
-        padding: 9px 8px;
-        color: black;
-    }
-    .btn {
-        background-color: rgb(190, 209, 212);
-
-
-    }
-    .btn:hover {
-        background-color: #187caa;
-    }
-    h5 {
-        text-align: center;
-        font-size: 30px;
-        color: white;
-    }
-    .form-group input[type=password]{
-        padding-left: 30px;
-    }
-    h3 {
-        text-align: center;
-        font-size: 20px;
-        color: white;
-    }
-
-    #particle-js {
-        margin: 0 auto;
-        width: 800px;
-        display: block;
-        margin: 20px 0;
-    }
-   
-
-</style>
-</head>
-<body>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>VetSx | Staff Login</title>
+  </head>
+  <body>
     <!-- Particles.js -->
     <div id="navbar"><span></span></div>
     <div id="wrapper">
-        <div id="particle-js"></div>
-        <!-- <button id="particle-button">Start</button> -->
+      <div id="particle-js"></div>
+      <!-- <button id="particle-button">Start</button> -->
     </div>
 
     <!-- Login -->
     <div class="card mb-3 rounded-0" style="max-width: 850px;">
-        <div class="row no-gutters">
-            <div class="col-md-5">
-                <img src="" class="card-img" alt=""></div>
-            <div class="col-md-7">
-            <div class="card-body">
-                <h5 class="card-title">VetSx</h5>
-                <h3 class="card-subtitle">Care. Heal. Connect.</h3>
-                <form>
-                    <div class="form-group">
-                        <label for="username"></label>
-                        <input type="username" class="form-control form-control-sm rounded-0" id="username" aria-describedby="usernamehelp" placeholder="Username"></input>
-                        <i class="fa fa-user fa-md fa-fw" aria-hidden="true"></i>
-                        <small id="usernameHelp" class="form-text text-muted"></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="password"></label>
-                        <input type="password" class="form-control form-control-sm rounded-0" id="password" placeholder="Password"></input>
-                        <i class="fa fa-lock fa-md form-control-feedback" aria-hidden="true"></i>
-                        <p class="card-text"><small class="text-muted">Forgot Password?</small></p>
-                    </div>
-                    <button type="submit" class="btn btn-primary rounded-0">Verify Identity</button>
-                </form>
-            </div>
-            </div>
+      <div class="row no-gutters">
+        <div class="col-md-5">
+          <img src="" class="card-img" alt="" />
         </div>
-    </div>  
-    <!-- Particles -->
-<script>
-    $("#particle-button").click(function(){
-        particlesJS.load('particle-div','particle-cfg.json');
-    });
-</script>
 
-</body>
+        <div class="col-md-7">
+          <div class="card-body">
+            <h5 class="card-title">VetSx</h5>
+            <h3 class="card-subtitle">Care. Heal. Connect.</h3>
+            <form>
+              <div class="form-group">
+                <label for="username"></label>
+                <input
+                  type="username"
+                  class="form-control form-control-sm rounded-0"
+                  id="username"
+                  aria-describedby="usernamehelp"
+                  placeholder="Username"
+                />
+                <i class="fa fa-user fa-md fa-fw" aria-hidden="true"></i>
+                <small id="usernameHelp" class="form-text text-muted"></small>
+              </div>
+              <div class="form-group">
+                <label for="password"></label>
+                <input
+                  type="password"
+                  class="form-control form-control-sm rounded-0"
+                  id="password"
+                  placeholder="Password"
+                />
+                <i
+                  class="fa fa-lock fa-md form-control-feedback"
+                  aria-hidden="true"
+                ></i>
+                <p class="card-text">
+                  <small class="text-muted">Forgot Password?</small>
+                </p>
+              </div>
+              <button type="submit" class="btn btn-primary rounded-0">
+                Verify Identity
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-7">
+      <div class="card-body">
+        <h5 class="card-title">VetSx</h5>
+        <h3 class="card-subtitle">Care. Heal. Connect.</h3>
+        <form>
+          <div class="form-group">
+            <label for="username"></label>
+            <input
+              type="username"
+              class="form-control form-control-sm rounded-0"
+              id="username"
+              aria-describedby="usernamehelp"
+              placeholder="Username"
+            />
+            <i class="fa fa-user fa-md fa-fw" aria-hidden="true"></i>
+            <small id="usernameHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="password"></label>
+            <input
+              type="password"
+              class="form-control form-control-sm rounded-0"
+              id="password"
+              placeholder="Password"
+            />
+            <i
+              class="fa fa-lock fa-md form-control-feedback"
+              aria-hidden="true"
+            ></i>
+            <p class="card-text">
+              <small class="text-muted">Forgot Password?</small>
+            </p>
+          </div>
+          <button type="submit" class="btn btn-primary rounded-0">
+            Verify Identity
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- </div>
+    </div> -->
+    <!-- Particles -->
+    <footer>
+      <div class="footer row text-dark">
+        <div class="col-md-4 text-center">
+          <a href="./about.html" target="_blank">About the Creators</a>
+        </div>
+        <div class="footer-center-text text-center col-md-4">
+          VetSx | Client Communication Simplified
+        </div>
+        <div class="col-md-4 text-right">
+          &copy; 2019
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    $("#particle-button").click(function() {
+      particlesJS.load("particle-div", "particle-cfg.json");
+    });
+  </script>
 </html>
