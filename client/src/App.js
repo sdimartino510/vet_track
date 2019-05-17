@@ -9,6 +9,7 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/" component={Login} />
+          <Route exact path="/admin" component={() => <h1>Logged in!</h1>} />
         </Switch>
       </div>
     </Router>
