@@ -21,12 +21,7 @@ function App() {
           <Route
             exact
             path="/form"
-            component={
-              (Form,
-              () => {
-                document.title = "VetSx | Patient Status";
-              })
-            }
+            component={() => <Form title="VetSx | Patient Status" />}
           />
         </Switch>
       </div>

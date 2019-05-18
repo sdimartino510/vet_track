@@ -47,7 +47,7 @@ class Login extends Component {
 
   render() {
     if (this.state.login) {
-      return <Redirect to="/admin" />;
+      return <Redirect to="/form" />;
     } else {
       return (
         <div>
