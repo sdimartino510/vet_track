@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./pages/Login/Login";
+import Form from "./pages/Form/Form";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,16 @@ function App() {
               document.title = "You're logged in, Serg";
               return <h1>Logged in!</h1>;
             }}
+          />
+          <Route
+            exact
+            path="/form"
+            component={
+              (Form,
+              () => {
+                document.title = "VetSx | Patient Status";
+              })
+            }
           />
         </Switch>
       </div>
