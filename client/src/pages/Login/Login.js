@@ -9,6 +9,10 @@ class Login extends Component {
     login: false
   };
 
+  componentDidMount() {
+    document.title = "VetSx | Staff Login";
+  }
+
   handleChange = e => {
     const { name, value } = e.target;
     this.setState({
