@@ -5,10 +5,10 @@
 }
 
 .header {
-  color: #00ffff;
+  color: aqua;
 }
 .tagline {
-  color: #ffffff;
+  color: white;
 }
 
 .container {
@@ -190,7 +190,7 @@ img {
     1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 2px;
-  border: 2px solid #000000;
+  border: 2px solid black;
 }
 
 .item1 {
@@ -198,7 +198,7 @@ img {
   grid-column-start: 1;
   grid-column-end: 7;
   text-align: center;
-  color: #00ffff;
+  color: aqua;
 
   grid-row-start: 1;
   grid-row-end: 3;
@@ -221,7 +221,7 @@ img {
 } */
 
 .item2 {
-  background: #00ffff;
+  background: aqua;
   grid-column-start: 1;
   grid-column-end: 2;
 
@@ -247,7 +247,7 @@ img {
 }
 
 .item4 {
-  background: #00ffff;
+  background: aqua;
   grid-column-start: 2;
   grid-column-end: 3;
 
@@ -273,7 +273,7 @@ img {
 }
 
 .item6 {
-  background: #00ffff;
+  background: aqua;
   grid-column-start: 3;
   grid-column-end: 4;
 
@@ -299,7 +299,7 @@ img {
 }
 
 .item8 {
-  background: #00ffff;
+  background: aqua;
   grid-column-start: 4;
   grid-column-end: 5;
 
@@ -325,7 +325,7 @@ img {
 }
 
 .item10 {
-  background: #00ffff;
+  background: aqua;
   grid-column-start: 5;
   grid-column-end: 6;
 
@@ -351,7 +351,7 @@ img {
 }
 
 .item12 {
-  background: #00ffff;
+  background: aqua;
   grid-column-start: 6;
   grid-column-end: 7;
 
