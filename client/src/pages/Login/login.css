@@ -1,10 +1,10 @@
 .card-body {
-  background-color: rgb(193, 202, 204);
+  background-color: #343a40;
   height: 600px;
   /* margin-top: 10px;     */
 }
 .col-md-5 {
-  background-color: rgb(223, 222, 236);
+  background-color: rgb(193, 202, 204);
   height: 600px;
   /* margin-top: 10px;     */
 }
@@ -36,7 +36,9 @@ form {
   color: black;
 }
 .btn {
-  background-color: rgb(190, 209, 212);
+  background-color: aqua;
+  color: #343a40;
+  border: #343a40;
 }
 .btn:hover {
   background-color: #187caa;
@@ -44,7 +46,7 @@ form {
 h5 {
   text-align: center;
   font-size: 30px;
-  color: white;
+  color: aqua;
 }
 .form-group input[type="password"] {
   padding-left: 30px;
@@ -60,18 +62,4 @@ h3 {
   width: 800px;
   display: block;
   margin: 20px 0;
-}
-.footer {
-  background-color: #c1ccc3;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 30px;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 6px;
-  font-size: 12px;
-}
-.footer-center-text {
-  font-weight: 700;
 }
