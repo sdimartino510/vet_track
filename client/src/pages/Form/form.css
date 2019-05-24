@@ -5,15 +5,18 @@
 }
 
 .header {
-  color: aqua;
+  color: #00ffff;
+  font-size: 55px;
 }
+
 .tagline {
-  color: white;
+  color: #ffffff;
 }
 
 .container {
   height: 80px;
 }
+
 #patientStat {
   word-spacing: 0.2em;
 }
@@ -48,7 +51,7 @@ h2 {
 }
 
 .nav {
-  color: black;
+  color: #000000;
 }
 
 .nav-tabs .nav-link {
@@ -60,7 +63,7 @@ h2 {
 
 .container-profile {
   background-color: #343a40;
-  color: aqua;
+  color: #00ffff;
   text-align: center;
 }
 
@@ -90,7 +93,7 @@ img {
 
 .patient-header {
   background-color: #343a40;
-  color: aqua;
+  color: #00ffff;
   text-align: center;
   font-size: 20px;
 }
@@ -133,7 +136,7 @@ img {
 
 .client-header {
   background-color: #343a40;
-  color: aqua;
+  color: #00ffff;
   text-align: center;
   font-size: 20px;
 }
@@ -160,7 +163,7 @@ img {
 
 .container-providers {
   background-color: #343a40;
-  color: aqua;
+  color: #00ffff;
   text-align: center;
 }
 
@@ -187,7 +190,7 @@ img {
   grid-column-start: 1;
   grid-column-end: 7;
   text-align: center;
-  color: aqua;
+  color: #00ffff;
 
   grid-row-start: 1;
   grid-row-end: 3;
@@ -198,7 +201,7 @@ img {
 }
 
 .item2 {
-  background: aqua;
+  background: #00ffff;
   grid-column-start: 1;
   grid-column-end: 2;
 
@@ -224,7 +227,7 @@ img {
 }
 
 .item4 {
-  background: aqua;
+  background: #00ffff;
   grid-column-start: 2;
   grid-column-end: 3;
 
@@ -250,7 +253,7 @@ img {
 }
 
 .item6 {
-  background: aqua;
+  background: #00ffff;
   grid-column-start: 3;
   grid-column-end: 4;
 
@@ -276,7 +279,7 @@ img {
 }
 
 .item8 {
-  background: aqua;
+  background: #00ffff;
   grid-column-start: 4;
   grid-column-end: 5;
 
@@ -302,7 +305,7 @@ img {
 }
 
 .item10 {
-  background: aqua;
+  background: #00ffff;
   grid-column-start: 5;
   grid-column-end: 6;
 
@@ -328,7 +331,7 @@ img {
 }
 
 .item12 {
-  background: aqua;
+  background: #00ffff;
   grid-column-start: 6;
   grid-column-end: 7;
 
@@ -357,7 +360,7 @@ img {
 
 .container-profile {
   background-color: #343a40;
-  color: aqua;
+  color: #00ffff;
   text-align: center;
 }
 
@@ -399,4 +402,29 @@ img {
 
 #inputsxTimeID {
   margin-left: 210px;
+}
+
+.surgical-header {
+  background-color: #343a40;
+  color: #00ffff;
+  text-align: center;
+  font-size: 20px;
+}
+
+#currentStatus {
+  margin-left: -14px;
+}
+
+#inputsxStatus {
+  margin-left: -14px;
+}
+
+.btn.btn-primary {
+  background-color: #343a40;
+  color: #00ffff;
+  border: #343a40;
+}
+
+.btn:hover {
+  background-color: #00ffff;
 }
