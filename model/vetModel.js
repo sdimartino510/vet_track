@@ -1,12 +1,14 @@
-var mongoose = require ("mongoose");
+var mongoose = require ('mongoose');
 
-var Schema = mongoose.Schema;
-
-var vetStatusSchema = new Schema ({
-   status: String,
-   time : { type: Number, default: (new Date()).getTime() }
-
+var userSchema = new mongoose.Schema({
+   username: {type: String, unique: true},
+   password: {type: String},
+   firstname: String,
+   lastname: String
 });
+
+var Use = mongoose.model('myuser', userSchema);
+module.exports = user;
 
 var vetStatus = mongoose.model("vetStatus", vetStatusSchema);
 
