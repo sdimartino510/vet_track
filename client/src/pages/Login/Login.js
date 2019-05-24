@@ -74,7 +74,7 @@ class Login extends Component {
                       <label htmlFor="username" />
                       <input
                         type="username"
-                        className="form-control form-control-sm rounded-0"
+                        className="form-control form-control-sm"
                         id="username"
                         aria-describedby="usernamehelp"
                         placeholder="Username"
@@ -95,7 +95,7 @@ class Login extends Component {
                       <label htmlFor="password" />
                       <input
                         type="password"
-                        className="form-control form-control-sm rounded-0"
+                        className="form-control form-control-sm"
                         id="password"
                         placeholder="Password"
                         name="password"
@@ -110,7 +110,8 @@ class Login extends Component {
                         <small className="text-muted">Forgot Password?</small>
                       </p>
                     </div>
-                    <button type="submit" className="btn btn-primary rounded-0">
+                    <br></br>
+                    <button type="submit" className="btn btn-primary">
                       Verify Identity
                     </button>
                   </form>
@@ -119,7 +120,7 @@ class Login extends Component {
             </div>
           </div>
 
-          <footer>
+          {/* <footer>
             <div className="footer row text-dark">
               <div className="col-md-4 text-center">
                 <a href="./about.html" target="_blank">
@@ -131,7 +132,7 @@ class Login extends Component {
               </div>
               <div className="col-md-4 text-right">&copy; 2019</div>
             </div>
-          </footer>
+          </footer> */}
         </div>
       );
     }
