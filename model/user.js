@@ -1,76 +1,41 @@
-module.exports = function(sequelize, DataTypes) {
-    var User = sequelize.define("User", {
-      id: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
-      },
-      username: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          len: [1, 50]
-        }
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      firstName: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          len: [1, 50]
-        }
-      },
-      lastName: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          len: [1, 50]
-        }
-      },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          isEmail: true
-        }
-      },
-      address: {
-        type: DataTypes.STRING,
-        allowNull: true
-      },
-      city: {
-        type: DataTypes.STRING,
-        allowNull: true
-      },
-      state: {
-        type: DataTypes.STRING,
-        allowNull: true
-      },
-      instruments: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      genres: {
-        type: DataTypes.STRING,
-        allowNull: true
-      },
-      bio: {
-        type: DataTypes.TEXT,
-        allowNull: true
-      },
-      // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      latitude: {
-        type: DataTypes.FLOAT,
-        allowNull: true
-      },
-      longitude: {
-        type: DataTypes.FLOAT,
-        allowNull: true
-      }
-      // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    });
-    return User;
-  };
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
+
+var userSchema = new mongoose.Schema({
+  username: { type: String, unique: true },
+  password: { type: String },
+  firstname: String,
+  lastname: String,
+  email: String,
+  phonenumber: Number,
+  address: String,
+  address2: String,
+  city: String,
+  state: String,
+  zip: Number,
+  additional: String,
+  status: [{ type: Schema.Types.ObjectId, ref: "Status" }]
+});
+
+// var User = mongoose.model('myuser', userSchema);
+// module.exports = User;
+
+var statusSchema = new mongoose.Schema({
+  username: { type: String, unique: true },
+  preop: Date,
+  surgicalprep: Date,
+  induction: Date,
+  startofsurgery: Date,
+  twohoursleft: Date,
+  onehourleft: Date,
+  fifteenminutesleft: Date,
+  recovery: Date,
+  recovered: Date,
+  pickupinxhours: Date
+});
+
+var User = mongoose.model("myuser", userSchema);
+module.exports = User;
+
+var Status = mongoose.model("status", statusSchema);
+module.exports = Status;

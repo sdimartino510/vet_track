@@ -56,7 +56,7 @@ class Form extends Component {
           <h2>Patient Status</h2>
           <br />
           <ul className="nav nav-tabs" id="myTab" role="tablist">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 className="nav-link active"
                 id="date-tab"
@@ -68,7 +68,7 @@ class Form extends Component {
               >
                 Date & Time
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -124,14 +124,14 @@ class Form extends Component {
           </ul>
           {/* <!-- Tab Panes --> */}
           {/* <!-- DATE & TIME --> */}
-          <div
+          {/* <div
             className="tab-pane fade show active"
             id="date"
             role="tabpanel"
             aria-labelledby="date-tab"
           >
             Date & Time
-          </div>
+          </div> */}
           {/* <!-- PROFILE --> */}
           <div
             className="tab-pane fade"
