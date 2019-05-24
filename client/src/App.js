@@ -10,8 +10,8 @@ function App() {
   return (
     <Router>
       {/* Particles */}
-      <div
-      style={{
+<div
+style={{
         position: "absolute",
         top: 0,
         left: 0,
@@ -29,15 +29,16 @@ function App() {
           }
         },
         color: {
-          value: "#ffffff"
+          value: "#343a40",
         },
         shape: {
           type: "circle",
           stroke: {
-            width: 2,
-            color: "#000000"
+            width: 9,
+            color: "aqua", 
           },
           polygon: {
+            polygon: {
             nb_sides: 4
           },
           image: {
@@ -57,10 +58,10 @@ function App() {
           }
         },
         size: {
-          value: 1.5,
+          value: 13,
           random: true,
           anim: {
-            enable: false,
+            enable: true,
             speed: 40,
             size_min: 0.1,
             sync: false
@@ -110,7 +111,7 @@ function App() {
           },
           bubble: {
             distance: 400,
-            size: 40,
+            size: 0,
             duration: 2,
             opacity: 8,
             speed: 3
@@ -128,10 +129,10 @@ function App() {
         }
       },
       retina_detect: true
-    }}
-  />
+    }}}
+/> 
       <div
-      style={{
+     style={{
             position: "absolute",
             top: 0,
             left: 0,
@@ -159,20 +160,5 @@ function App() {
     </Router>
   );
 }
-
-// Particles.js - This may not be utilized, but
-// I am working on it to see if I can get it running //
-
-// import Particles from 'react-particles-js';
-
-// class App extends Component{
-
-//     render(){
-//         return (
-//             <Particles />
-//         );
-//     };
-
-// }
 
 export default App;
