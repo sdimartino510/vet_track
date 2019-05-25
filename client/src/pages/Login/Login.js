@@ -62,7 +62,7 @@ class Login extends Component {
           <div className="card mb-3 rounded-0" style={{ maxWidth: "60%" }}>
             <div className="row no-gutters">
               <div className="col-md-5">
-                <img src="" className="card-img" alt="" />
+                {/* <img src="../client/public/assets/images/vetsx.jpg" className="card-img" alt="logo" /> */}
               </div>
 
               <div className="col-md-7">

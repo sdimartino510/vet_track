@@ -1,113 +1,92 @@
 /* Navbar */
-
-.nav-link {
+​ .nav-link {
   word-spacing: 1em;
 }
-
-.header {
+​ .header {
   color: aqua;
   font-size: 55px;
 }
 .tagline {
   color: white;
 }
-
-.container {
+​ .container {
   height: 80px;
 }
 #patientStat {
   word-spacing: 0.2em;
 }
-
+​
 /* Surgical Status */
-
+​
 .container-consumer {
   margin-right: 60px;
   margin-left: 60px;
 }
-
-.container-profile {
+​ .container-profile {
   background-color: #343a40;
   color: aqua;
   text-align: center;
   font-size: 20px;
 }
-
-.page-header {
+​ .page-header {
   font-size: 35px;
 }
-
-img {
+​ img {
   margin-left: 40px;
 }
-
-#sxpatientID {
+​ #sxpatientID {
   margin-left: 150px;
 }
-
-#inputsxPatientID {
+​ #inputsxPatientID {
   margin-left: 150px;
 }
-
-#sxDate {
+​ #sxDate {
   margin-left: 210px;
 }
-
-#inputsxDateID {
+​ #inputsxDateID {
   margin-left: 210px;
 }
-
-#sxclientID {
+​ #sxclientID {
   margin-left: 150px;
 }
-
-#inputsxClientID {
+​ #inputsxClientID {
   margin-left: 150px;
 }
-
-#sxTime {
+​ #sxTime {
   margin-left: 210px;
 }
-
-#inputsxTimeID {
+​ #inputsxTimeID {
   margin-left: 210px;
 }
-
-.surgical-header {
+​ .surgical-header {
   background-color: #343a40;
   color: aqua;
   text-align: center;
   font-size: 20px;
 }
-
-#currentStatus {
+​ #currentStatus {
   margin-left: -14px;
 }
-
-#inputsxStatus {
+​ #inputsxStatus {
   margin-left: -14px;
 }
-
-.client-header {
+​ .client-header {
   background-color: #343a40;
   color: aqua;
   text-align: center;
   font-size: 20px;
 }
-
-.footer-header {
+​ .footer-header {
   background-color: #343a40;
   color: #343a40;
   text-align: center;
   font-size: 20px;
 }
-
-.btn.btn-primary {
+​ .btn.btn-primary {
   background-color: #343a40;
   color: aqua;
   border: #343a40;
 }
-
-.btn:hover {
+​ .btn:hover {
   background-color: aqua;
 }

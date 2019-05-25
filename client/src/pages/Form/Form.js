@@ -53,7 +53,7 @@ class Form extends Component {
             </div>
           </div>
         </nav>
-        <br></br>
+        <br />
         <div className="container mt-3">
           <h2>Profile</h2>
           <br />
