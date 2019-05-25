@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(193, 202, 204);
+}
+
 /* Navbar */
 
 .nav-link {
@@ -6,15 +10,25 @@
 
 .header {
   color: aqua;
-  font-size: 55px;
+  font-size: 59px;
+  font-family: 'Orbitron', sans-serif; 
+  margin-top: 7px;
+  margin-bottom: 0;
+  padding-top: 2px;
+  letter-spacing: .2em;
 }
+
 .tagline {
-  color: white;
+  font-size: 17px;
+  color: #6aeb5e;
+  letter-spacing: .24em;
+  padding-left: 10px;
 }
 
 .container {
   height: 80px;
 }
+
 #patientStat {
   word-spacing: 0.2em;
 }
