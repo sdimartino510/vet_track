@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(193, 202, 204);
+}
+
 /* Navbar */
 
 .nav-link {
@@ -6,11 +10,19 @@
 
 .header {
   color: #00ffff;
-  font-size: 55px;
+  font-size: 59px;
+  font-family: 'Orbitron', sans-serif; 
+  margin-top: 7px;
+  margin-bottom: 0;
+  padding-top: 2px;
+  letter-spacing: .2em;
 }
 
 .tagline {
-  color: #ffffff;
+  font-size: 17px;
+  color: #6aeb5e;
+  letter-spacing: .24em;
+  padding-left: 10px;
 }
 
 .container {
@@ -25,38 +37,43 @@
 
 h2 {
   font-weight: bold;
-}
-
-#date-tab {
-  word-spacing: 0.2em;
-  font-weight: bold;
+  letter-spacing: .1em;
+  color: #343a40;
+  text-shadow:
+		-.5px -.5px 0 #00ffff,
+    .5px -.5px 0 #00ffff,
+    -.5px .5px 0 #00ffff,
+		.5px .5px 0 #00ffff;
 }
 
 #basic-tab {
   font-weight: bold;
+  color: #343a40;
 }
 
 #doc-tab {
   word-spacing: 0.2em;
   font-weight: bold;
+  color: #343a40;
 }
 
 #vitals-tab {
   font-weight: bold;
+  color: #343a40;
 }
 
 #surg-tab {
   word-spacing: 0.2em;
   font-weight: bold;
+  color: #343a40;
 }
 
 .nav {
-  color: #000000;
+  color: #343a40;
 }
 
 .nav-tabs .nav-link {
-  /* color: rgb(206, 33, 197); */
-  color: rgb(104, 26, 150);
+  color: #343a40;
 }
 
 /* Patient / Client Information Form */
@@ -191,10 +208,8 @@ img {
   grid-column-end: 7;
   text-align: center;
   color: #00ffff;
-
   grid-row-start: 1;
   grid-row-end: 3;
-
   padding-top: 1px;
   padding-bottom: 1px;
   font-size: 35px;
@@ -204,12 +219,9 @@ img {
   background: #00ffff;
   grid-column-start: 1;
   grid-column-end: 2;
-
   grid-row-start: 3;
   grid-row-end: 5;
-
   text-align: center;
-
   padding-top: 7px;
 }
 
@@ -217,12 +229,9 @@ img {
   background: rgb(167, 178, 199);
   grid-column-start: 1;
   grid-column-end: 2;
-
   grid-row-start: 5;
   grid-row-end: 17;
-
   text-align: center;
-
   padding-top: 6px;
 }
 
@@ -230,12 +239,9 @@ img {
   background: #00ffff;
   grid-column-start: 2;
   grid-column-end: 3;
-
   grid-row-start: 3;
   grid-row-end: 5;
-
   text-align: center;
-
   padding-top: 7px;
 }
 
@@ -243,12 +249,9 @@ img {
   background: rgb(110, 121, 141);
   grid-column-start: 2;
   grid-column-end: 3;
-
   grid-row-start: 5;
   grid-row-end: 17;
-
   text-align: center;
-
   padding-top: 6px;
 }
 
@@ -256,12 +259,9 @@ img {
   background: #00ffff;
   grid-column-start: 3;
   grid-column-end: 4;
-
   grid-row-start: 3;
   grid-row-end: 5;
-
   text-align: center;
-
   padding-top: 7px;
 }
 
@@ -269,12 +269,9 @@ img {
   background: rgb(167, 178, 199);
   grid-column-start: 3;
   grid-column-end: 4;
-
   grid-row-start: 5;
   grid-row-end: 17;
-
   text-align: center;
-
   padding-top: 6px;
 }
 
@@ -282,12 +279,9 @@ img {
   background: #00ffff;
   grid-column-start: 4;
   grid-column-end: 5;
-
   grid-row-start: 3;
   grid-row-end: 5;
-
   text-align: center;
-
   padding-top: 7px;
 }
 
@@ -295,12 +289,9 @@ img {
   background: rgb(110, 121, 141);
   grid-column-start: 4;
   grid-column-end: 5;
-
   grid-row-start: 5;
   grid-row-end: 17;
-
   text-align: center;
-
   padding-top: 6px;
 }
 
@@ -308,12 +299,9 @@ img {
   background: #00ffff;
   grid-column-start: 5;
   grid-column-end: 6;
-
   grid-row-start: 3;
   grid-row-end: 5;
-
   text-align: center;
-
   padding-top: 7px;
 }
 
@@ -321,12 +309,9 @@ img {
   background: rgb(167, 178, 199);
   grid-column-start: 5;
   grid-column-end: 6;
-
   grid-row-start: 5;
   grid-row-end: 17;
-
   text-align: center;
-
   padding-top: 6px;
 }
 
@@ -334,12 +319,9 @@ img {
   background: #00ffff;
   grid-column-start: 6;
   grid-column-end: 7;
-
   grid-row-start: 3;
   grid-row-end: 5;
-
   text-align: center;
-
   padding-top: 7px;
 }
 
@@ -347,12 +329,9 @@ img {
   background: rgb(110, 121, 141);
   grid-column-start: 6;
   grid-column-end: 7;
-
   grid-row-start: 5;
   grid-row-end: 17;
-
   text-align: center;
-
   padding-top: 6px;
 }
 

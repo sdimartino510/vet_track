@@ -13,7 +13,8 @@ class Form extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
-            <h1 className="header">VetSx &nbsp;</h1>
+            {/* <img src="../client/public/assets/images/vetsx.jpg" className="logo" alt="logo"/> */}
+            <h1 className="header">VetSx</h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
               className="navbar-toggler"
@@ -30,12 +31,12 @@ class Form extends Component {
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
                   <a className="nav-link" id="patientStat" href="#">
-                    Patient Status
+                    Profile
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    | About
+                    | Home
                   </a>
                 </li>
                 <li className="nav-item">
@@ -52,8 +53,9 @@ class Form extends Component {
             </div>
           </div>
         </nav>
+        <br></br>
         <div className="container mt-3">
-          <h2>Patient Status</h2>
+          <h2>Profile</h2>
           <br />
           <ul className="nav nav-tabs" id="myTab" role="tablist">
             {/* <li className="nav-item">
@@ -79,7 +81,7 @@ class Form extends Component {
                 aria-controls="basic"
                 aria-selected="false"
               >
-                Profile
+                Patient
               </a>
             </li>
             <li className="nav-item">
