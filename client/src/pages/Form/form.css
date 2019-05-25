@@ -11,17 +11,17 @@ body {
 .header {
   color: #00ffff;
   font-size: 59px;
-  font-family: 'Orbitron', sans-serif; 
+  font-family: "Orbitron", sans-serif;
   margin-top: 7px;
   margin-bottom: 0;
   padding-top: 2px;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
 
 .tagline {
   font-size: 17px;
   color: #6aeb5e;
-  letter-spacing: .24em;
+  letter-spacing: 0.24em;
   padding-left: 10px;
 }
 
@@ -37,13 +37,10 @@ body {
 
 h2 {
   font-weight: bold;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: #343a40;
-  text-shadow:
-		-.5px -.5px 0 #00ffff,
-    .5px -.5px 0 #00ffff,
-    -.5px .5px 0 #00ffff,
-		.5px .5px 0 #00ffff;
+  text-shadow: -0.5px -0.5px 0 #00ffff, 0.5px -0.5px 0 #00ffff,
+    -0.5px 0.5px 0 #00ffff, 0.5px 0.5px 0 #00ffff;
 }
 
 #basic-tab {
