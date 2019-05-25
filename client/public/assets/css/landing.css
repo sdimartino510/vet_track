@@ -7,12 +7,7 @@
 h1.header {
     color: aqua;
     font-size: 59px;
-    /* font-family: 'Audiowide', cursive; */
     font-family: 'Orbitron', sans-serif; 
-    /* font-family: 'Ubuntu', sans-serif; */
-    /* font-family: 'Aldrich', sans-serif; */
-    /* font-family: 'Do Hyeon', sans-serif; */
-    /* font-family: 'Montserrat Subrayada', sans-serif; */
     margin-top: 7px;
     margin-bottom: 0;
     padding-top: 2px;
@@ -34,20 +29,16 @@ h1.header {
 
 .wrapper {
     margin-top: 15em;
-    /* background-color: rgb(193, 202, 204); */
 }
 
 #subtitle {
     font-size: 44px;
-    /* color: #6aeb5e; */
-    /* color: #696e72; */
     color: #35cf27;
     text-shadow:
 		-1.0px -1.0px 0 #343a40,
         1.0px -1.0px 0 #343a40,
         -1.0px 1.0px 0 #343a40,
-		1.0px 1.0px 0 #343a40;
-    
+		1.0px 1.0px 0 #343a40;    
 }
 
 #description {
@@ -56,4 +47,4 @@ h1.header {
 
 body {
     background-color: rgb(193, 202, 204);
-  }
+}
