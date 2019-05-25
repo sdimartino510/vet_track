@@ -14,6 +14,17 @@ class Form extends Component {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
             {/* <img src="../client/public/assets/images/vetsx.jpg" className="logo" alt="logo"/> */}
+             
+             
+             <div className="media">
+              <img
+                src="../client/public/assets/images/shiba.jpeg"
+                className="mr-4"
+                alt="shibainu"
+              />
+              </div>
+
+              
             <h1 className="header">VetSx</h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
