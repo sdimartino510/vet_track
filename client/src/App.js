@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Form from "./pages/Form/Form";
 import Landing from "./pages/Landing/Landing";
+import Profile from "./components/Profile";
 import "./App.css";
 import Particles from "react-particles-js";
 
@@ -266,6 +267,11 @@ function App() {
               exact
               path="/form"
               component={() => <Form title="VetSx | Patient Status" />}
+            />
+            <Route
+              exact
+              path="/profile"
+              component={() => <Profile title="VetSx | Patient Profile" />}
             />
           </Switch>
         </div>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./profile.css";
 
 class Profile extends Component {
   state = {
@@ -9,7 +10,45 @@ class Profile extends Component {
     inputBreed: "",
     inputGender: "",
     inputAge: "",
-    inputColor: ""
+    inputColor: "",
+    spayedYesBox: false,
+    spayedNoBox: false,
+    microYesBox: false,
+    microNoBox: false,
+    medicalHistory: ""
+  };
+  handleChange = e => {
+    const { name, value } = e.target;
+    this.setState({
+      [name]: value
+    });
+  };
+  handleSubmit = e => {
+    e.preventDefault();
+    fetch("/api/profile", {
+      method: "post",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        patientText: this.state.patientText,
+        clientText: this.state.clientText,
+        inputPetsName: this.state.inputPetsName,
+        inputSpecies: this.state.inputSpecies,
+        inputBreed: this.state.inputBreed,
+        inputGender: this.state.inputGender,
+        inputAge: this.state.inputAge,
+        inputColor: this.state.inputColor,
+        spayedYesBox: this.state.spayedYesBox,
+        spayedNoBox: this.state.spayedNoBox,
+        microYesBox: this.state.microYesBox,
+        microNoBox: this.state.microNoBox,
+        medicalHistory: this.state.medicalHistory
+      })
+    }).then(response => {
+      return response.json();
+    });
   };
   render() {
     return (
@@ -32,7 +71,7 @@ class Profile extends Component {
             {/* <!-- Patient and Client ID Input --> */}
             <form>
               <div className="form-group">
-                <label id="patientID" for="patientID">
+                <label id="patientID" htmlFor="patientID">
                   Patient ID
                 </label>
                 <input
@@ -40,10 +79,12 @@ class Profile extends Component {
                   id="patientText"
                   name="patientText"
                   type="text"
+                  value={this.state.patientText}
+                  onChange={this.handleChange}
                 />
               </div>
               <div className="form-group">
-                <label id="clientID" for="clientID">
+                <label id="clientID" htmlFor="clientID">
                   Client ID
                 </label>
                 <input
@@ -51,6 +92,8 @@ class Profile extends Component {
                   id="clientText"
                   name="clientText"
                   type="text"
+                  value={this.state.clientText}
+                  onChange={this.handleChange}
                 />
               </div>
             </form>
@@ -66,7 +109,7 @@ class Profile extends Component {
         <form>
           <div className="form-row">
             <div className="form-group col-md-4">
-              <label id="petsName" for="inputPetsName">
+              <label id="petsName" htmlFor="inputPetsName">
                 Pets Name
               </label>
               <input
@@ -74,10 +117,12 @@ class Profile extends Component {
                 className="form-control"
                 id="inputPetsName"
                 name="inputPetsName"
+                value={this.state.inputPetsName}
+                onChange={this.handleChange}
               />
             </div>
             <div className="form-group col-md-3">
-              <label id="species" for="inputSpecies">
+              <label id="species" htmlFor="inputSpecies">
                 Species
               </label>
               <input
@@ -85,10 +130,12 @@ class Profile extends Component {
                 className="form-control"
                 id="inputSpecies"
                 name="inputSpecies"
+                value={this.state.inputSpecies}
+                onChange={this.handleChange}
               />
             </div>
             <div className="form-group col-md-3">
-              <label id="breed" for="inputBreed">
+              <label id="breed" htmlFor="inputBreed">
                 Breed
               </label>
               <input
@@ -96,6 +143,8 @@ class Profile extends Component {
                 className="form-control"
                 id="inputBreed"
                 name="inputBreed"
+                value={this.state.inputBreed}
+                onChange={this.handleChange}
               />
             </div>
           </div>
@@ -103,7 +152,7 @@ class Profile extends Component {
         <form>
           <div className="form-row">
             <div className="form-group col-md-3">
-              <label id="gender" for="inputGender">
+              <label id="gender" htmlFor="inputGender">
                 Gender
               </label>
               <input
@@ -111,10 +160,12 @@ class Profile extends Component {
                 className="form-control"
                 id="inputGender"
                 name="inputGender"
+                value={this.state.inputGender}
+                onChange={this.handleChange}
               />
             </div>
             <div className="form-group col-md-2">
-              <label id="age" for="inputAge">
+              <label id="age" htmlFor="inputAge">
                 Age
               </label>
               <input
@@ -122,10 +173,12 @@ class Profile extends Component {
                 className="form-control"
                 id="inputAge"
                 name="inputAge"
+                value={this.state.inputAge}
+                onChange={this.handleChange}
               />
             </div>
             <div className="form-group col-md-5">
-              <label id="color" for="inputColor">
+              <label id="color" htmlFor="inputColor">
                 Color / Markings
               </label>
               <input
@@ -133,6 +186,8 @@ class Profile extends Component {
                 className="form-control"
                 id="inputColor"
                 name="inputColor"
+                value={this.state.inputColor}
+                onChange={this.handleChange}
               />
             </div>
           </div>
@@ -147,20 +202,26 @@ class Profile extends Component {
             <div className="form-check col-md-1">
               <input
                 id="spayedYesBox"
+                name="spayedYesBox"
                 className="form-check-input"
                 type="checkbox"
+                value={this.state.spayedYesBox}
+                onChange={this.handleChange}
               />
-              <label id="spayedYes" className="form-check-label" for="yes">
+              <label id="spayedYes" className="form-check-label" htmlFor="yes">
                 Yes
               </label>
             </div>
             <div className="form-check col-md-1">
               <input
                 id="spayedNoBox"
+                name="spayedNoBox"
                 className="form-check-input"
                 type="checkbox"
+                value={this.state.spayedNoBox}
+                onChange={this.handleChange}
               />
-              <label id="spayedNo" className="form-check-label" for="no">
+              <label id="spayedNo" className="form-check-label" htmlFor="no">
                 No
               </label>
             </div>
@@ -170,20 +231,26 @@ class Profile extends Component {
             <div className="form-check col-md-1">
               <input
                 id="microYesBox"
+                name="microYesBox"
                 className="form-check-input"
                 type="checkbox"
+                value={this.state.microYesBox}
+                onChange={this.handleChange}
               />
-              <label id="microYes" className="form-check-label" for="yes">
+              <label id="microYes" className="form-check-label" htmlFor="yes">
                 Yes
               </label>
             </div>
             <div className="form-check col-md-1">
               <input
                 id="microNoBox"
+                name="microNoBox"
                 className="form-check-input"
                 type="checkbox"
+                value={this.state.microNoBox}
+                onChange={this.handleChange}
               />
-              <label id="microNo" className="form-check-label" for="no">
+              <label id="microNo" className="form-check-label" htmlFor="no">
                 No
               </label>
             </div>
@@ -192,13 +259,19 @@ class Profile extends Component {
         <br />
         <form>
           <div className="form-group">
-            <label for="exampleFormControlTextarea1">Medical History</label>
+            <label htmlFor="medicalHistory">Medical History</label>
             <textarea
               className="form-control"
-              id="exampleFormControlTextarea1"
+              id="medicalHistory"
+              name="medicalHistory"
               rows="3"
+              value={this.state.medicalHistory}
+              onChange={this.handleChange}
             />
           </div>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
         </form>
       </div>
     );
