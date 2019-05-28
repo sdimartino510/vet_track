@@ -4,6 +4,7 @@ import Login from "./pages/Login/Login";
 import Form from "./pages/Form/Form";
 import Landing from "./pages/Landing/Landing";
 import Profile from "./components/Profile";
+import Consumer from "./pages/Consumer/Consumer";
 import "./App.css";
 import Particles from "react-particles-js";
 
@@ -266,12 +267,19 @@ function App() {
             <Route
               exact
               path="/form"
-              component={() => <Form title="VetSx | Patient Status" />}
+              component={() => <Form title="VetSx | Patient Status Entry" />}
             />
             <Route
               exact
               path="/profile"
               component={() => <Profile title="VetSx | Patient Profile" />}
+            />
+            <Route
+              exact
+              path="/consumer"
+              component={() => (
+                <Consumer title="VetSx | Patient Surgical Status" />
+              )}
             />
           </Switch>
         </div>
