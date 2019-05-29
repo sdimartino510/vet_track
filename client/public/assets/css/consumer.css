@@ -8,6 +8,14 @@ body {
   word-spacing: 1em;
 }
 
+img.logoconsumer {
+  width: 65px;
+  height: 77px;
+  padding-right: 7px;
+  padding-bottom: 18px;
+  padding-top: 4px;
+}
+
 .header {
   color: aqua;
   font-size: 59px;
@@ -23,6 +31,7 @@ body {
   color: #6aeb5e;
   letter-spacing: 0.24em;
   padding-left: 10px;
+  padding-top: 48px;
 }
 
 .container {

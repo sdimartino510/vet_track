@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 // import { Redirect } from "react-router-dom";
 import "./form.css";
+import Logo from "../../images/vetsx.jpg";
+import Shiba from "../../images/shiba.jpeg"
+
 
 class Form extends Component {
   state = {};
@@ -13,8 +16,8 @@ class Form extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
-            {/* <img src="../client/public/assets/images/vetsx.jpg" className="logo" alt="logo"/> */}
-            <h1 className="header">VetSx</h1>
+            <img src={Logo} className="logoform" alt="logo" />
+            <h1 className="header">etS<sub>X</sub></h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
               className="navbar-toggler"
@@ -35,17 +38,17 @@ class Form extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/">
                     | Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/Consumer">
                     | Consumer |
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/">
                     Logout
                   </a>
                 </li>
@@ -150,7 +153,7 @@ class Form extends Component {
             {/* <!-- Patient Image --> */}
             <div className="media">
               <img
-                src="../client/public/assets/images/shiba.jpeg"
+                src={Shiba}
                 className="mr-4"
                 alt="shibainu"
               />
