@@ -64,11 +64,11 @@ img {
   margin-left: 40px;
 }
 
-#sxpatientID {
+#sxPatientID {
   margin-left: 150px;
 }
 
-#inputsxPatientID {
+#inputSxPatientID {
   margin-left: 150px;
 }
 
@@ -76,15 +76,15 @@ img {
   margin-left: 210px;
 }
 
-#inputsxDateID {
+#inputSxDateID {
   margin-left: 210px;
 }
 
-#sxclientID {
+#sxClientID {
   margin-left: 150px;
 }
 
-#inputsxClientID {
+#inputSxClientID {
   margin-left: 150px;
 }
 
@@ -92,7 +92,7 @@ img {
   margin-left: 210px;
 }
 
-#inputsxTimeID {
+#inputSxTimeID {
   margin-left: 210px;
 }
 
@@ -107,7 +107,7 @@ img {
   margin-left: -14px;
 }
 
-#inputsxStatus {
+#inputSxStatus {
   margin-left: -14px;
 }
 
@@ -134,99 +134,3 @@ img {
 .btn:hover {
   background-color: aqua;
 }
-
-
-
-
-/* Navbar */
-/* ​ .nav-link {
-  word-spacing: 1em;
-}
-​ .header {
-  color: aqua;
-  font-size: 55px;
-}
-.tagline {
-  color: white;
-}
-​ .container {
-  height: 80px;
-}
-#patientStat {
-  word-spacing: 0.2em;
-}
-​ */
-/* Surgical Status */
-​
-/* .container-consumer {
-  margin-right: 60px;
-  margin-left: 60px;
-}
-​ .container-profile {
-  background-color: #343a40;
-  color: aqua;
-  text-align: center;
-  font-size: 20px;
-}
-​ .page-header {
-  font-size: 35px;
-}
-​ img {
-  margin-left: 40px;
-}
-​ #sxPatientID {
-  margin-left: 150px;
-}
-​ #inputSxPatientID {
-  margin-left: 150px;
-}
-​ #sxDate {
-  margin-left: 210px;
-}
-​ #inputSxDateID {
-  margin-left: 210px;
-}
-​ #sxClientID {
-  margin-left: 150px;
-}
-​ #inputSxClientID {
-  margin-left: 150px;
-}
-​ #sxTime {
-  margin-left: 210px;
-}
-​ #inputSxTimeID {
-  margin-left: 210px;
-}
-​ .surgical-header {
-  background-color: #343a40;
-  color: aqua;
-  text-align: center;
-  font-size: 20px;
-}
-​ #currentStatus {
-  margin-left: -14px;
-}
-​ #inputSxStatus {
-  margin-left: -14px;
-}
-​ .client-header {
-  background-color: #343a40;
-  color: aqua;
-  text-align: center;
-  font-size: 20px;
-}
-​ .footer-header {
-  background-color: #343a40;
-  color: #343a40;
-  text-align: center;
-  font-size: 20px;
-}
-​ .btn.btn-primary {
-  background-color: #343a40;
-  color: aqua;
-  border: #343a40;
-}
-​ .btn:hover {
-  background-color: aqua;
-} */
