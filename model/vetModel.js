@@ -7,7 +7,7 @@ var userSchema = new mongoose.Schema({
    lastname: String
 });
 
-var Use = mongoose.model('myuser', userSchema);
+var user = mongoose.model('myuser', userSchema);
 module.exports = user;
 
 var vetStatus = mongoose.model("vetStatus", vetStatusSchema);
