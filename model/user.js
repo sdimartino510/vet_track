@@ -1,24 +1,62 @@
 var mongoose = require ('mongoose');
 
+// Create Schema for User
 var userSchema = new mongoose.Schema({
-   username: {type: String, unique: true},
-   password: {type: String},
-   firstname: String,
-   lastname: String,
-   email: String,
-   phonenumber: Number,
-   address: String,
-   address2: String,
-   city: String,
-   state: String,
-   zip: Number,
-   additional: String,
+    username: {type: String, 
+    required: true
+  },
+   password: {
+     type: String,
+     required: true
+  },
+   firstname: {
+     type: String,
+     required: true
+   },
+   lastname: {
+     type: String,
+     required: true
+   },
+   email: {
+     type: String,
+     required: true
+   },
+   phonenumber: {
+     type: Number,
+     required: true
+   },
+   address: {
+     type: String,
+     required: true
+   },
+   address2: {
+     type: String,
+     required: false
+   },
+   city: {
+     type: String,
+     required: false
+   },
+   state: {
+     type: String,
+     required: false
+   },
+   zip: {
+     type: Number,
+     required: false
+   },
+   additional: {
+     type: String,
+     required: false
+   },
+   
    status : [{ type: Schema.Types.ObjectId, ref: 'Status' }]
 });
 
 // var User = mongoose.model('myuser', userSchema);
 // module.exports = User;
 
+// Create schema for Status
 var statusSchema = new mongoose.Schema ({
   username: {type: String, unique: true},
   preop: Date,
