@@ -4,6 +4,9 @@ import React, { Component } from "react";
 import Tabs from "../../components/Tabs";
 
 class Form extends Component {
+  componentDidMount() {
+    document.title = "VetSx | Surgical Status";
+  }
   state = {
     patientText: "",
     clientText: "",
