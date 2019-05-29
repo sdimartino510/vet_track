@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import { Redirect } from "react-router-dom";
-import "./form.css";
+// import "./form.css";
 import Logo from "../../images/vetsx.jpg";
 import Shiba from "../../images/shiba.jpeg"
 
@@ -16,7 +16,7 @@ class Form extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
-            <img src={Logo} className="logoform" alt="logo" />
+            <img src={Logo} className="logoform" alt="logo" height="80" />
             <h1 className="header">etS<sub>X</sub></h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
@@ -33,7 +33,7 @@ class Form extends Component {
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" id="patientStat" href="#">
+                  <a className="nav-link" id="patientStatPage" href="#">
                     Profile
                   </a>
                 </li>

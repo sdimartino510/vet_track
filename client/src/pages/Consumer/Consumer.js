@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./consumer.css";
+import Logo from "../../images/vetsx.jpg";
+import Shiba from "../../images/shiba.jpeg";
 
 class Consumer extends Component {
   state = {
@@ -47,7 +49,8 @@ class Consumer extends Component {
         {/* <!-- Navbar --> */}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
-            <h1 className="header">VetSx</h1>
+          <img src={Logo} className="logoform" alt="logo" height="80" />
+            <h1 className="header">etS<sub>X</sub></h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
               className="navbar-toggler"
@@ -78,7 +81,7 @@ class Consumer extends Component {
           </div>
         </nav>
         {/* <!-- Page Content --> */}
-
+        <br />
         {/* <!--  Surgical Procedure Status --> */}
         <div className="container-consumer">
           <div className="container-profile">
@@ -89,7 +92,7 @@ class Consumer extends Component {
 
           <div className="media">
             <img
-              src="../client/public/assets/images/shiba.jpeg"
+              src={Shiba}
               className="mr-4"
               alt="shibainu"
             />
@@ -127,7 +130,7 @@ class Consumer extends Component {
           {/* <!-- Patient Surgical Status Header --> */}
           <div className="container-sx">
             <div className="surgical-header">
-              <div>Patient Surgical Status</div>
+              <div>Current Status</div>
             </div>
           </div>
           <br />
@@ -144,8 +147,8 @@ class Consumer extends Component {
           </div>
 
           <form>
-            <div className="form-group">
-              <label htmlFor="additionalInformation">Additional Comments</label>
+            <div className="form-group col-md-12" id="testForm">
+              <label id="labelAddInfo" htmlFor="additionalInformation">Additional Comments</label>
               <textarea
                 className="form-control"
                 id="addInfo"

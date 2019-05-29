@@ -40,6 +40,22 @@ img.logoconsumer {
 
 #patientStat {
   word-spacing: 0.2em;
+  background-color: aqua;
+  color: #343a40;
+}
+
+button.btn.btn-info {
+  background-color: aqua;
+}
+
+#patientStat:hover {
+  word-spacing: 0.2em;
+  background-color:  #343a40;
+  color: aqua;
+}
+
+button.btn.btn-info:hover {
+  background-color: #343a40;
 }
 
 /* Surgical Status */
@@ -70,6 +86,7 @@ img {
 
 #inputSxPatientID {
   margin-left: 150px;
+
 }
 
 #sxDate {
@@ -134,3 +151,24 @@ img {
 .btn:hover {
   background-color: aqua;
 }
+
+/* textarea#addInfo.form-control {
+  margin-right: 80px;
+}
+
+#labelAddInfo {
+ margin-right: 150px;
+ margin-left: 0;
+}
+
+.form-group {
+ margin-left: 0;
+}
+
+#testForm {
+  margin-right: 500px;
+} */
+
+/* div#testForm.form-group.col-md-12 {
+  margin-right: 30px;
+} */

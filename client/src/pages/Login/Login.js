@@ -188,20 +188,19 @@ class Login extends Component {
           </div>
           <div id="wrapper">
             <div id="particle-js" />
-            {/* <!-- <button id="particle-button">Start</button> --> */}
           </div>
 
-          <div className="card mb-3 rounded-0" style={{ maxWidth: "60%" }}>
+          <div className="card login-card mb-3 rounded-0" style={{ maxWidth: "60%" }}>
             <div className="row no-gutters">
-              <div className="col-md-5">
+              <div className="col-md-5 logo-wrapper">
                 <img src={Logo} className="logo" alt="logo" />
               </div>
 
               <div className="col-md-7">
-                <div className="card-body">
+                <div className="card-body login-body">
                   <h5 className="card-title">VetS<sub>X</sub></h5>
                   <h3 className="card-subtitle">Care. Heal. Connect.</h3>
-                  <form onSubmit={this.handleSubmit}>
+                  <form className="username-form" onSubmit={this.handleSubmit}>
                     <div className="form-group">
                       <label htmlFor="username" />
                       <input
