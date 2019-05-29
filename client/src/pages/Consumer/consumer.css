@@ -64,11 +64,11 @@ img {
   margin-left: 40px;
 }
 
-#sxpatientID {
+#sxPatientID {
   margin-left: 150px;
 }
 
-#inputsxPatientID {
+#inputSxPatientID {
   margin-left: 150px;
 }
 
@@ -76,15 +76,15 @@ img {
   margin-left: 210px;
 }
 
-#inputsxDateID {
+#inputSxDateID {
   margin-left: 210px;
 }
 
-#sxclientID {
+#sxClientID {
   margin-left: 150px;
 }
 
-#inputsxClientID {
+#inputSxClientID {
   margin-left: 150px;
 }
 
@@ -92,7 +92,7 @@ img {
   margin-left: 210px;
 }
 
-#inputsxTimeID {
+#inputSxTimeID {
   margin-left: 210px;
 }
 
@@ -107,7 +107,7 @@ img {
   margin-left: -14px;
 }
 
-#inputsxStatus {
+#inputSxStatus {
   margin-left: -14px;
 }
 

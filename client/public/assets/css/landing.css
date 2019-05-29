@@ -1,0 +1,50 @@
+/* Navbar */
+    
+.nav-link {
+    word-spacing: 1em;
+}
+
+h1.header {
+    color: aqua;
+    font-size: 59px;
+    font-family: 'Orbitron', sans-serif; 
+    margin-top: 7px;
+    margin-bottom: 0;
+    padding-top: 2px;
+}
+
+.tagline {
+    color: white;
+}
+
+.container {
+    height: 80px;
+}
+
+#patientStat {
+    word-spacing: .2em;
+}
+
+/* Subtitle and Description */
+
+.wrapper {
+    margin-top: 15em;
+}
+
+#subtitle {
+    font-size: 44px;
+    color: #35cf27;
+    text-shadow:
+		-1.0px -1.0px 0 #343a40,
+        1.0px -1.0px 0 #343a40,
+        -1.0px 1.0px 0 #343a40,
+		1.0px 1.0px 0 #343a40;    
+}
+
+#description {
+    font-size: 19px;
+}
+
+body {
+    background-color: rgb(193, 202, 204);
+}

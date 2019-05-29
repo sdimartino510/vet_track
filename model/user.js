@@ -1,4 +1,5 @@
-var mongoose = require ('mongoose');
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
 
 // Create Schema for User
 var userSchema = new mongoose.Schema({
@@ -56,9 +57,8 @@ var userSchema = new mongoose.Schema({
 // var User = mongoose.model('myuser', userSchema);
 // module.exports = User;
 
-// Create schema for Status
-var statusSchema = new mongoose.Schema ({
-  username: {type: String, unique: true},
+var statusSchema = new mongoose.Schema({
+  username: { type: String, unique: true },
   preop: Date,
   surgicalprep: Date,
   induction: Date,
@@ -68,11 +68,11 @@ var statusSchema = new mongoose.Schema ({
   fifteenminutesleft: Date,
   recovery: Date,
   recovered: Date,
-  pickupinxhours: Date, 
-})
+  pickupinxhours: Date
+});
 
-var User = mongoose.model('myuser', userSchema);
+var User = mongoose.model("myuser", userSchema);
 module.exports = User;
 
-var Status  = mongoose.model('status', statusSchema);
+var Status = mongoose.model("status", statusSchema);
 module.exports = Status;
