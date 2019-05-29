@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 // import { Redirect } from "react-router-dom";
-import "./form.css";
 import Logo from "../../images/vetsx.jpg";
-import Shiba from "../../images/shiba.jpeg"
-
+import Shiba from "../../images/shiba.jpeg";
 
 class Form extends Component {
   state = {};
@@ -17,7 +15,9 @@ class Form extends Component {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
             <img src={Logo} className="logoform" alt="logo" />
-            <h1 className="header">etS<sub>X</sub></h1>
+            <h1 className="header">
+              etS<sub>X</sub>
+            </h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
               className="navbar-toggler"
@@ -152,11 +152,7 @@ class Form extends Component {
             </div>
             {/* <!-- Patient Image --> */}
             <div className="media">
-              <img
-                src={Shiba}
-                className="mr-4"
-                alt="shibainu"
-              />
+              <img src={Shiba} className="mr-4" alt="shibainu" />
               <div className="media-body">
                 <br />
                 <br />
