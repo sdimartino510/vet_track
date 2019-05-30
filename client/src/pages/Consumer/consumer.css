@@ -1,43 +1,20 @@
-body {
-  background-color: rgb(193, 202, 204);
-}
-
 /* Navbar */
 
 .nav-link {
   word-spacing: 1em;
 }
 
-img.logoconsumer {
-  width: 65px;
-  height: 77px;
-  padding-right: 7px;
-  padding-bottom: 18px;
-  padding-top: 4px;
-}
-
 .header {
   color: aqua;
-  font-size: 59px;
-  font-family: "Orbitron", sans-serif;
-  margin-top: 7px;
-  margin-bottom: 0;
-  padding-top: 2px;
-  letter-spacing: 0.2em;
+  font-size: 55px;
 }
-
 .tagline {
-  font-size: 17px;
-  color: #6aeb5e;
-  letter-spacing: 0.24em;
-  padding-left: 10px;
-  padding-top: 48px;
+  color: white;
 }
 
 .container {
   height: 80px;
 }
-
 #patientStat {
   word-spacing: 0.2em;
 }
@@ -64,11 +41,11 @@ img {
   margin-left: 40px;
 }
 
-#sxPatientID {
+#sxpatientID {
   margin-left: 150px;
 }
 
-#inputSxPatientID {
+#inputsxPatientID {
   margin-left: 150px;
 }
 
@@ -76,15 +53,15 @@ img {
   margin-left: 210px;
 }
 
-#inputSxDateID {
+#inputsxDateID {
   margin-left: 210px;
 }
 
-#sxClientID {
+#sxclientID {
   margin-left: 150px;
 }
 
-#inputSxClientID {
+#inputsxClientID {
   margin-left: 150px;
 }
 
@@ -92,7 +69,7 @@ img {
   margin-left: 210px;
 }
 
-#inputSxTimeID {
+#inputsxTimeID {
   margin-left: 210px;
 }
 
@@ -107,7 +84,7 @@ img {
   margin-left: -14px;
 }
 
-#inputSxStatus {
+#inputsxStatus {
   margin-left: -14px;
 }
 

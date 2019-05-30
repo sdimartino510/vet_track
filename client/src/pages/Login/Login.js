@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import "./login.css";
-import Logo from "../../images/vetsx.jpg";
-import Particles from "react-particles-js";
-
 
 class Login extends Component {
   state = {
@@ -53,160 +50,30 @@ class Login extends Component {
       return <Redirect to="/form" />;
     } else {
       return (
-        <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%"
-        }}
-      >
-        <Particles
-          params={{
-            particles: {
-              number: {
-                value: 250,
-                density: {
-                  enable: true,
-                  value_area: 800
-                }
-              },
-              color: {
-                value: ["#343a40", "#00ffff", "#6aeb5e"]
-              },
-              shape: {
-                type: "circle",
-                stroke: {
-                  width: 0,
-                  color: "#ff0000"
-                },
-                polygon: {
-                  nb_sides: 5
-                },
-                image: {
-                  src: "",
-                  width: 100,
-                  height: 100
-                }
-              },
-              opacity: {
-                value: 1,
-                random: false,
-                anim: {
-                  enable: false,
-                  speed: 2,
-                  opacity_min: 0,
-                  sync: false
-                }
-              },
-              size: {
-                value: 3,
-                random: false,
-                anim: {
-                  enable: false,
-                  speed: 20,
-                  size_min: 0,
-                  sync: false
-                }
-              },
-              line_linked: {
-                enable: true,
-                distance: 100,
-                color: "#fff",
-                opacity: 1,
-                width: 1
-              },
-              move: {
-                enable: true,
-                speed: 1,
-                direction: "none",
-                random: false,
-                straight: false,
-                out_mode: "out",
-                bounce: false,
-                attract: {
-                  enable: false,
-                  rotateX: 3000,
-                  rotateY: 3000
-                }
-              },
-              array: []
-            },
-            interactivity: {
-              detect_on: "canvas",
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "grab"
-                },
-                onclick: {
-                  enable: true,
-                  mode: "push"
-                },
-                resize: true
-              },
-              modes: {
-                grab: {
-                  distance: 100,
-                  line_linked: {
-                    opacity: 1
-                  }
-                },
-                bubble: {
-                  distance: 200,
-                  size: 80,
-                  duration: 0.4
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 0.4
-                },
-                push: {
-                  particles_nb: 4
-                },
-                remove: {
-                  particles_nb: 2
-                }
-              },
-              mouse: {}
-            },
-            retina_detect: true
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%"
-          }}
-        >
+        <div>
           <div id="navbar">
             <span />
           </div>
           <div id="wrapper">
             <div id="particle-js" />
-            {/* <!-- <button id="particle-button">Start</button> --> */}
           </div>
 
           <div className="card mb-3 rounded-0" style={{ maxWidth: "60%" }}>
             <div className="row no-gutters">
               <div className="col-md-5">
-                <img src={Logo} className="logo" alt="logo" />
+                <img src="" className="card-img" alt="" />
               </div>
 
               <div className="col-md-7">
                 <div className="card-body">
-                  <h5 className="card-title">VetS<sub>X</sub></h5>
+                  <h5 className="card-title">VetSx</h5>
                   <h3 className="card-subtitle">Care. Heal. Connect.</h3>
                   <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                       <label htmlFor="username" />
                       <input
                         type="username"
-                        className="form-control form-control-sm rounded-0"
+                        className="form-control form-control-sm"
                         id="username"
                         aria-describedby="usernamehelp"
                         placeholder="Username"
@@ -227,7 +94,7 @@ class Login extends Component {
                       <label htmlFor="password" />
                       <input
                         type="password"
-                        className="form-control form-control-sm rounded-0"
+                        className="form-control form-control-sm"
                         id="password"
                         placeholder="Password"
                         name="password"
@@ -243,7 +110,7 @@ class Login extends Component {
                       </p>
                     </div>
                     <br></br>
-                    <button type="submit" className="btn btn-primary rounded-0">
+                    <button type="submit" className="btn btn-primary">
                       Verify Identity
                     </button>
                   </form>
@@ -266,7 +133,6 @@ class Login extends Component {
             </div>
           </footer> */}
         </div>
-      </div>
       );
     }
   }

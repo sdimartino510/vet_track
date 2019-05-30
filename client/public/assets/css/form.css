@@ -5,12 +5,12 @@
 }
 
 .header {
-  color: #641d66;
+  color: aqua;
   font-size: 55px;
 }
 
 .tagline {
-  color: #6aeb5e;
+  color: white;
 }
 
 .container {
@@ -289,7 +289,7 @@ img {
 }
 
 .item7 {
-  background: #a7b2c7;
+  background: rgb(167, 178, 199);
   grid-column-start: 3;
   grid-column-end: 4;
 
