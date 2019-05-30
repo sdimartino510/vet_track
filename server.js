@@ -28,6 +28,11 @@ app.use(routes);
 //   process.env.MONGODB_URI || "mongodb://localhost/XXXX"
 // );
 
+mongoose.connect(
+  // update this with the database
+  process.env.MONGODB_URI || "mongodb://localhost/vets"
+);
+
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
