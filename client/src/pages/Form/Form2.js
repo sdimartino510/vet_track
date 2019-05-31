@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 // import { render } from "react-dom";
-
 import Tabs from "../../components/Tabs";
+import Logo from "../../images/vetsx.jpg";
+import Shiba from "../../images/shiba.jpeg"
+
+
 
 class Form extends Component {
   componentDidMount() {
@@ -137,10 +140,52 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <h1>Patient Status</h1>
+          {/* Navbar */}
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+          <div className="container">
+            <img src={Logo} className="logoform" alt="logo" height="90" />
+            <h1 className="header">etS<sub>X</sub></h1>
+            <div className="tagline">Care. Heal. Connect.</div>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon" />
+            </button>
+            <div className="collapse navbar-collapse" id="navbarResponsive">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item active">
+                  <a className="nav-link" id="patientStatPage" href="#">
+                    Profile
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/consumer">
+                    | Consumer |
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/">
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <br />
+        <br />
+        <h2 className="status-page-header">Patient Status</h2>
+        <br />
         <Tabs>
           {/* First Tab */}
           <div label="Patient Profile">
+          <br />
             <div className="container-profile">
               <div className="page-header">
                 <div>Profile Information</div>
@@ -148,12 +193,12 @@ class Form extends Component {
             </div>
             {/* <!-- Patient Image --> */}
             <div className="media">
-              <img src="../images/shiba.jpeg" className="mr-4" alt="shibainu" />
+              <img src={Shiba} className="mr-4" alt="shibainu" />
               <div className="media-body">
                 <br />
                 <br />
                 {/* <!-- Patient and Client ID Input --> */}
-                <form>
+                <form className="patient-client-input-fields">
                   <div className="form-group">
                     <label id="patientID" htmlFor="patientID">
                       Patient ID
@@ -190,7 +235,7 @@ class Form extends Component {
                 <div>Patient Information</div>
               </div>
             </div>
-            <form>
+            <form className="patient-information-fields">
               <div className="form-row">
                 <div className="form-group col-md-4">
                   <label id="petsName" htmlFor="inputPetsName">
@@ -235,7 +280,7 @@ class Form extends Component {
             </form>
             <form>
               <div className="form-row">
-                <div className="form-group col-md-3">
+                <div className="form-group col-md-4">
                   <label id="gender" htmlFor="inputGender">
                     Gender
                   </label>
@@ -248,7 +293,7 @@ class Form extends Component {
                     onChange={this.handleChange}
                   />
                 </div>
-                <div className="form-group col-md-2">
+                <div className="form-group col-md-3">
                   <label id="age" htmlFor="inputAge">
                     Age
                   </label>
@@ -261,7 +306,7 @@ class Form extends Component {
                     onChange={this.handleChange}
                   />
                 </div>
-                <div className="form-group col-md-5">
+                <div className="form-group col-md-3">
                   <label id="color" htmlFor="inputColor">
                     Color / Markings
                   </label>
@@ -352,9 +397,8 @@ class Form extends Component {
                 </div>
               </div>
             </form>
-            <br />
             <form>
-              <div className="form-group">
+              <div className="form-group medical-history-section">
                 <label htmlFor="medicalHistory">Medical History</label>
                 <textarea
                   className="form-control"
@@ -365,13 +409,13 @@ class Form extends Component {
                   onChange={this.handleChange}
                 />
               </div>
+              <br />
               {/* Client Information */}
               <div className="container-client">
                 <div className="client-header">
                   <div>Client Information</div>
                 </div>
               </div>
-              <br />
               <form>
                 <div className="form-row">
                   <div className="form-group col-md-6">
@@ -413,7 +457,7 @@ class Form extends Component {
                         onChange={this.handleChange}
                       />
                     </div>
-                    <div className="form-group col-md-6">
+                    <div className="form-group col-md-5">
                       <label htmlFor="inputPhone">Phone Number</label>
                       <input
                         type="text"
@@ -450,8 +494,8 @@ class Form extends Component {
                       onChange={this.handleChange}
                     />
                   </div>
-                  <div className="form-row">
-                    <div className="form-group col-md-6">
+                  <div className="form-row city-state-zip-row">
+                    <div className="form-group col-md-4">
                       <label htmlFor="inputCity">City</label>
                       <input
                         type="text"
@@ -462,7 +506,7 @@ class Form extends Component {
                         onChange={this.handleChange}
                       />
                     </div>
-                    <div className="form-group col-md-4">
+                    <div className="form-group col-md-3 state-label-input">
                       <label htmlFor="inputState">State</label>
                       <select
                         id="inputState"
@@ -525,8 +569,8 @@ class Form extends Component {
                         <option value="Wyoming">Wyoming</option>
                       </select>
                     </div>
-                    <div className="form-group col-md-2">
-                      <label htmlFor="inputZip">Zip</label>
+                    <div className="form-group col-md-3">
+                      <label className="zip-label" htmlFor="inputZip">Zip</label>
                       <input
                         type="text"
                         className="form-control"
@@ -540,8 +584,8 @@ class Form extends Component {
                 </form>
               </form>
               <form>
-                <div className="form-group">
-                  <label htmlFor="additionalInformation">
+                <div className="form-group additional-info-label-input">
+                  <label className="additional-info-label" htmlFor="additionalInformation">
                     Additional Information
                   </label>
                   <textarea
@@ -553,6 +597,7 @@ class Form extends Component {
                     onChange={this.handleChange}
                   />
                 </div>
+              <br />
               </form>
               <button
                 onClick={this.handleSubmitProfile}
@@ -560,54 +605,68 @@ class Form extends Component {
               >
                 Submit
               </button>
+            <br />
+            <br />
             </form>
+            <div className="container-client">
+            <div className="footer-header">
+              <div className="copyright text-light">
+                COPYRIGHT &#169;2019 VetS<sub>X</sub>
+              </div>
+            </div>
+          </div>
           </div>
           {/* Second Tab */}
           <div label="Patient Vitals">
-            <div class="item item2">Heart Rate</div>
-            <div class="item item3">
+          <br />
+          <div class="container-v">
+            <div className="item item1">Vital Statistics</div>
+            <div className="item item2">Heart Rate</div>
+            <div className="item item3">
               <pre>Normal Range</pre>60-140 bpm
             </div>
 
-            <div class="item item4">Blood Pressure</div>
-            <div class="item item5">
+            <div className="item item4">Blood Pressure</div>
+            <div className="item item5">
               <pre>Normal Range</pre>65-75 diastolic
             </div>
 
-            <div class="item item6">
+            <div className="item item6">
               Oxygen Saturation(SPO<sub>2</sub> )
             </div>
-            <div class="item item7">
+            <div className="item item7">
               <pre>Normal Range</pre>>95%
             </div>
 
-            <div class="item item8">Respiration</div>
-            <div class="item item9">
+            <div className="item item8">Respiration</div>
+            <div className="item item9">
               <pre>Normal Range</pre>10-35 rpm
             </div>
 
-            <div class="item item10">Temperature</div>
-            <div class="item item11">
+            <div className="item item10">Temperature</div>
+            <div className="item item11">
               <pre>Normal Range</pre>100-102.5°F
             </div>
 
-            <div class="item item12">
+            <div className="item item12">
               {" "}
               End-tidal CO<sub>2</sub>(EtCO<sub>2</sub> )
             </div>
-            <div class="item item13">
+            <div className="item item13">
               <pre>Normal Range</pre>35-45 mmHg
             </div>
           </div>
+          </div>
           {/* Third Tab */}
           <div label="Surgical Procedure Status">
+          <br />
             <div className="surgical-header">
               <div>Patient/Client ID</div>
             </div>
             <form>
-              <div className="form-row">
+              <div className="form-row patient-id-date-labels-input">
                 <div className="form-group col-md-4">
-                  <label id="sxpatientID" htmlFor="inputPatientID">
+                  <label id="sxPatientID" htmlFor="inputPatientID">
                     Patient ID
                   </label>
                   <input
@@ -637,7 +696,7 @@ class Form extends Component {
             <form>
               <div className="form-row">
                 <div className="form-group col-md-4">
-                  <label id="sxclientID" for="inputClientID">
+                  <label id="sxlientID" for="inputClientID">
                     Client ID
                   </label>
                   <input
@@ -694,11 +753,11 @@ class Form extends Component {
                 <option value="Pick-up In 2 Hours">Pick-up In 2 Hours</option>
               </select>
             </div>
-            <form>
-              <div class="form-group">
+            <form className="additional-notes-label-input">
+              <div className="form-group">
                 <label for="additionalNotes">Additional Notes</label>
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   id="addNotes"
                   name="addNotes"
                   rows="3"
@@ -708,10 +767,18 @@ class Form extends Component {
               </div>
               <br />
             </form>
-
             <button onClick={this.handleSubmitStatus} class="btn btn-primary">
               Submit
             </button>
+            <br />
+            <br />
+            <div className="container-client">
+            <div className="footer-header">
+              <div className="copyright text-light">
+                COPYRIGHT &#169;2019 VetS<sub>X</sub>
+              </div>
+            </div>
+          </div>
           </div>
         </Tabs>
       </div>
