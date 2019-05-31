@@ -188,7 +188,6 @@ class Login extends Component {
           </div>
           <div id="wrapper">
             <div id="particle-js" />
-            {/* <!-- <button id="particle-button">Start</button> --> */}
           </div>
 
           <div className="card mb-3 rounded-0" style={{ maxWidth: "60%" }}>
