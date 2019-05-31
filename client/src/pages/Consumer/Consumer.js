@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./consumer.css";
+import Logo from "../../images/vetsx.jpg";
+import Shiba from "../../images/shiba.jpeg";
 
 class Consumer extends Component {
   state = {
@@ -47,7 +49,8 @@ class Consumer extends Component {
         {/* <!-- Navbar --> */}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
-            <h1 className="header">VetSx</h1>
+          <img src={Logo} className="logoform" alt="logo" height="80" />
+            <h1 className="header">etS<sub>X</sub></h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
               className="navbar-toggler"
@@ -78,7 +81,7 @@ class Consumer extends Component {
           </div>
         </nav>
         {/* <!-- Page Content --> */}
-
+        <br />
         {/* <!--  Surgical Procedure Status --> */}
         <div className="container-consumer">
           <div className="container-profile">
@@ -89,16 +92,16 @@ class Consumer extends Component {
 
           <div className="media">
             <img
-              src="../client/public/assets/images/shiba.jpeg"
+              src={Shiba}
               className="mr-4"
               alt="shibainu"
             />
             <div className="media-body">
               {/* <!--  Surgical Procedure Status --> */}
               <form>
-                <div className="form-row">
+                <div className="form-row label-input-patient-date">
                   <div className="form-group col-md-4">
-                    <label id="sxPatientID" htmlFor="inputPatientID">
+                    <label id="sxConsumerID" htmlFor="inputPatientID">
                       Patient ID
                     </label>
                     <input
@@ -123,11 +126,10 @@ class Consumer extends Component {
               </form>
             </div>
           </div>
-
           {/* <!-- Patient Surgical Status Header --> */}
           <div className="container-sx">
             <div className="surgical-header">
-              <div>Patient Surgical Status</div>
+              <div>Current Status</div>
             </div>
           </div>
           <br />
@@ -142,10 +144,9 @@ class Consumer extends Component {
               type="text"
             />
           </div>
-
-          <form>
-            <div className="form-group">
-              <label htmlFor="additionalInformation">Additional Comments</label>
+          <form className="additional-comments-wrapper">
+            <div className="form-group col-md-12">
+              <label id="labelAddInfo" htmlFor="additionalInformation">Additional Comments</label>
               <textarea
                 className="form-control"
                 id="addInfo"
@@ -164,7 +165,7 @@ class Consumer extends Component {
           </div>
           <br />
           {/* <!-- Patient Information Inputs --> */}
-          <form>
+          <form className="patient-section-wrapper">
             <div className="form-row">
               <div className="form-group col-md-4">
                 <label id="petsName" htmlFor="inputPetsName">
@@ -173,12 +174,11 @@ class Consumer extends Component {
                 <input
                   type="text"
                   className="form-control"
-                  id="inputPetsName"
                   name="inputPetsName"
                 />
               </div>
               <div className="form-group col-md-3">
-                <label id="species" htmlFor="inputSpecies">
+                <label className="label-species-patient-section" htmlFor="inputSpecies">
                   Species
                 </label>
                 <input
@@ -202,10 +202,10 @@ class Consumer extends Component {
             </div>
           </form>
 
-          <form>
+          <form className="gender-age-label-input-fields">
             <div className="form-row">
               <div className="form-group col-md-3">
-                <label id="gender" htmlFor="inputGender">
+                <label htmlFor="inputGender">
                   Gender
                 </label>
                 <input
@@ -214,6 +214,7 @@ class Consumer extends Component {
                   id="inputGender"
                   name="inputGender"
                 />
+              </div>
               </div>
               <div className="form-group col-md-2">
                 <label id="age" htmlFor="inputAge">
@@ -226,8 +227,15 @@ class Consumer extends Component {
                   name="inputAge"
                 />
               </div>
-            </div>
           </form>
+          <br />
+          <div className="container-client">
+            <div className="footer-header">
+              <div className="copyright text-light">
+                COPYRIGHT &#169;2019 VetS<sub>X</sub>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
