@@ -1,9 +1,9 @@
-.card-body {
+.login-body {
   background-color: #343a40;
   height: 600px;
 }
 
-.col-md-5 {
+.logo-wrapper {
   background-color: rgba(214, 243, 243, 0.486);
   height: 600px;
 }
@@ -15,10 +15,10 @@
   border: 0.5px solid #343a40;
 }
 
-form {
-  margin-right: 6em;
-  margin-left: 6em;
-  margin-top: 10em;
+.username-form {
+  margin-right: 116px;
+  margin-left: 116px;
+  margin-top: 70px;
   text-align: center;
 }
 
