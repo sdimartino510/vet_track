@@ -10,6 +10,10 @@ router.route("/login").post((req, res) => {
   
   res.status(200).json({ result: "success" });
 });
+router.route("/profile").post((req, res) => {
+  console.log("req.body - profile", req.body);
+  res.status(200).json({ result: "success" });
+});
 
 router.route('/patientinfo').post((req, res) => {
   console.log("Patient Info", req.body);

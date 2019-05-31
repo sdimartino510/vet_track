@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import { Redirect } from "react-router-dom";
-import "./form.css";
+import Logo from "../../images/vetsx.jpg";
+import Shiba from "../../images/shiba.jpeg";
 
 
 class Form extends Component {
@@ -149,7 +150,10 @@ class Form extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
-            <h1 className="header">VetSx &nbsp;</h1>
+            <img src={Logo} className="logoform" alt="logo" />
+            <h1 className="header">
+              etS<sub>X</sub>
+            </h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
               className="navbar-toggler"
@@ -167,21 +171,21 @@ class Form extends Component {
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
                   <a className="nav-link" id="patientStat" href="#">
-                    Patient Status
+                    Profile
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    | About
+                  <a className="nav-link" href="/">
+                    | Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/Consumer">
                     | Consumer |
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/">
                     Logout
                   </a>
                 </li>
@@ -189,8 +193,9 @@ class Form extends Component {
             </div>
           </div>
         </nav>
+        <br />
         <div className="container mt-3">
-          <h2>Patient Status</h2>
+          <h2>Profile</h2>
           <br />
           <ul className="nav nav-tabs" id="myTab" role="tablist">
             {/* <li className="nav-item">
@@ -216,7 +221,7 @@ class Form extends Component {
                 aria-controls="basic"
                 aria-selected="false"
               >
-                Profile
+                Patient
               </a>
             </li>
             <li className="nav-item">
@@ -284,11 +289,7 @@ class Form extends Component {
             </div>
             {/* <!-- Patient Image --> */}
             <div className="media">
-              <img
-                src="../client/public/assets/images/shiba.jpeg"
-                className="mr-4"
-                alt="shibainu"
-              />
+              <img src={Shiba} className="mr-4" alt="shibainu" />
               <div className="media-body">
                 <br />
                 <br />
