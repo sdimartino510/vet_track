@@ -9,7 +9,6 @@ import Particles from 'react-particles-js';
 function App() {
   return (
     <Router>
-      {/* Particles */}
 <div
 style={{
         position: "absolute",

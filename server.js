@@ -20,13 +20,15 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("views"));
 }
 // Add routes, both API and view
-app.use(routes);
+
 
 // Connect to the Mongo DB
-// mongoose.connect(
-//   // update this with the database
-//   process.env.MONGODB_URI || "mongodb://localhost/XXXX"
-// );
+mongoose.connect(
+  // update this with the database
+  process.env.MONGODB_URI || "mongodb://localhost/27017/vets"
+);
+
+app.use(routes);
 
 // Start the API server
 app.listen(PORT, function() {
