@@ -20,10 +20,10 @@
 
 //         if(!user) {
 //             return res.status(404).send();
-//         }    
-    
+//         }
+
 //         return res.status(200).send();
-//     }) 
+//     })
 // });
 
 // router.post('/register', function(req, res) {
@@ -39,7 +39,7 @@
 //     var state = req.body.state;
 //     var zip = req.body.zip;
 //     var additional = req.body.additional;
-    
+
 //     var newuser = new User();
 //     newuser.username = username;
 //     newuser.password = password;
@@ -59,32 +59,32 @@
 //             return res.status(500).send();
 //         }
 
-
 //     })
 // })
 
 // module.exports = router;
 
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 var auth = require("../controllers/AuthController.js");
+console.log("auth", auth);
 
 // restrict index for logged in user only
-router.get('/', auth.home);
+router.get("/", auth.home);
 
 // route to register page
-router.get('/register', auth.register);
+router.get("/register", auth.register);
 
 // route for register action
-router.post('/register', auth.doRegister);
+router.post("/register", auth.doRegister);
 
 // route to login page
-router.get('/login', auth.login);
+router.get("/login", auth.login);
 
 // route for login action
-router.post('/login', auth.doLogin);
+router.post("/api/login", auth.doLogin);
 
 // route for logout action
-router.get('/logout', auth.logout);
+router.get("/logout", auth.logout);
 
 module.exports = router;
