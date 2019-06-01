@@ -2,9 +2,7 @@ import React, { Component } from "react";
 // import { render } from "react-dom";
 import Tabs from "../../components/Tabs";
 import Logo from "../../images/vetsx.jpg";
-import Shiba from "../../images/shiba.jpeg"
-
-
+import Shiba from "../../images/shiba.jpeg";
 
 class Form extends Component {
   componentDidMount() {
@@ -140,11 +138,13 @@ class Form extends Component {
   render() {
     return (
       <div>
-          {/* Navbar */}
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        {/* Navbar */}
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-top">
           <div className="container">
             <img src={Logo} className="logoform" alt="logo" height="90" />
-            <h1 className="header">etS<sub>X</sub></h1>
+            <h1 className="header">
+              etS<sub>X</sub>
+            </h1>
             <div className="tagline">Care. Heal. Connect.</div>
             <button
               className="navbar-toggler"
@@ -185,7 +185,7 @@ class Form extends Component {
         <Tabs>
           {/* First Tab */}
           <div label="Patient Profile">
-          <br />
+            <br />
             <div className="container-profile">
               <div className="page-header">
                 <div>Profile Information</div>
@@ -570,7 +570,9 @@ class Form extends Component {
                       </select>
                     </div>
                     <div className="form-group col-md-3">
-                      <label className="zip-label" htmlFor="inputZip">Zip</label>
+                      <label className="zip-label" htmlFor="inputZip">
+                        Zip
+                      </label>
                       <input
                         type="text"
                         className="form-control"
@@ -585,7 +587,10 @@ class Form extends Component {
               </form>
               <form>
                 <div className="form-group additional-info-label-input">
-                  <label className="additional-info-label" htmlFor="additionalInformation">
+                  <label
+                    className="additional-info-label"
+                    htmlFor="additionalInformation"
+                  >
                     Additional Information
                   </label>
                   <textarea
@@ -597,7 +602,7 @@ class Form extends Component {
                     onChange={this.handleChange}
                   />
                 </div>
-              <br />
+                <br />
               </form>
               <button
                 onClick={this.handleSubmitProfile}
@@ -605,61 +610,61 @@ class Form extends Component {
               >
                 Submit
               </button>
-            <br />
-            <br />
+              <br />
+              <br />
             </form>
             <div className="container-client">
-            <div className="footer-header">
-              <div className="copyright text-light">
-                COPYRIGHT &#169;2019 VetS<sub>X</sub>
+              <div className="footer-header">
+                <div className="copyright text-light">
+                  COPYRIGHT &#169;2019 VetS<sub>X</sub>
+                </div>
               </div>
             </div>
           </div>
-          </div>
           {/* Second Tab */}
           <div label="Patient Vitals">
-          <br />
-          <div class="container-v">
-            <div className="item item1">Vital Statistics</div>
-            <div className="item item2">Heart Rate</div>
-            <div className="item item3">
-              <pre>Normal Range</pre>60-140 bpm
-            </div>
+            <br />
+            <div class="container-v">
+              <div className="item item1">Vital Statistics</div>
+              <div className="item item2">Heart Rate</div>
+              <div className="item item3">
+                <pre>Normal Range</pre>60-140 bpm
+              </div>
 
-            <div className="item item4">Blood Pressure</div>
-            <div className="item item5">
-              <pre>Normal Range</pre>65-75 diastolic
-            </div>
+              <div className="item item4">Blood Pressure</div>
+              <div className="item item5">
+                <pre>Normal Range</pre>65-75 diastolic
+              </div>
 
-            <div className="item item6">
-              Oxygen Saturation(SPO<sub>2</sub> )
-            </div>
-            <div className="item item7">
-              <pre>Normal Range</pre>>95%
-            </div>
+              <div className="item item6">
+                Oxygen Saturation(SPO<sub>2</sub> )
+              </div>
+              <div className="item item7">
+                <pre>Normal Range</pre>>95%
+              </div>
 
-            <div className="item item8">Respiration</div>
-            <div className="item item9">
-              <pre>Normal Range</pre>10-35 rpm
-            </div>
+              <div className="item item8">Respiration</div>
+              <div className="item item9">
+                <pre>Normal Range</pre>10-35 rpm
+              </div>
 
-            <div className="item item10">Temperature</div>
-            <div className="item item11">
-              <pre>Normal Range</pre>100-102.5°F
-            </div>
+              <div className="item item10">Temperature</div>
+              <div className="item item11">
+                <pre>Normal Range</pre>100-102.5°F
+              </div>
 
-            <div className="item item12">
-              {" "}
-              End-tidal CO<sub>2</sub>(EtCO<sub>2</sub> )
+              <div className="item item12">
+                {" "}
+                End-tidal CO<sub>2</sub>(EtCO<sub>2</sub> )
+              </div>
+              <div className="item item13">
+                <pre>Normal Range</pre>35-45 mmHg
+              </div>
             </div>
-            <div className="item item13">
-              <pre>Normal Range</pre>35-45 mmHg
-            </div>
-          </div>
           </div>
           {/* Third Tab */}
           <div label="Surgical Procedure Status">
-          <br />
+            <br />
             <div className="surgical-header">
               <div>Patient/Client ID</div>
             </div>
@@ -773,12 +778,12 @@ class Form extends Component {
             <br />
             <br />
             <div className="container-client">
-            <div className="footer-header">
-              <div className="copyright text-light">
-                COPYRIGHT &#169;2019 VetS<sub>X</sub>
+              <div className="footer-header">
+                <div className="copyright text-light">
+                  COPYRIGHT &#169;2019 VetS<sub>X</sub>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </Tabs>
       </div>

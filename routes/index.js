@@ -84,6 +84,11 @@ router.get("/login", auth.login);
 // route for login action
 router.post("/api/login", auth.doLogin);
 
+router.post("/api/profile", (req, res) => {
+  console.log("req.body - profile", req.body);
+  res.status(200).json({ result: "success" });
+});
+
 // route for logout action
 router.get("/logout", auth.logout);
 
