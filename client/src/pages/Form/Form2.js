@@ -160,7 +160,7 @@ class Form extends Component {
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" id="patientStatPage" href="#">
+                  <a className="nav-link" id="patientStatPage" href="/form">
                     Profile
                   </a>
                 </li>
