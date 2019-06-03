@@ -1,7 +1,9 @@
 const express = require("express");
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/test", { useNewUrlParser: true });
+mongoose.connect("mongodb://ds231377.mlab.com:31377/heroku_kpw4n7qq", {
+  useNewUrlParser: true
+});
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
