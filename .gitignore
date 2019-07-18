@@ -1,1 +1,13 @@
+#
+# .gitignore
+#
+# List of files and globs to ignore.
+#
+
 node_modules/
+**/.DS_Store
+
+# Ignore python artifacts
+*.pyc
+*.pyo
+
