@@ -5,7 +5,7 @@ import Landing from "./pages/Landing/Landing";
 import Profile from "./components/Profile";
 import Consumer from "./pages/Consumer/Consumer";
 import Form from "./pages/Form/Form2";
-import("./pages/Form/tabStyles.css");
+// import("./pages/Form/tabStyles.css");
 // import "./App.css";
 
 function App() {
